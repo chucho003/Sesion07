@@ -3,6 +3,8 @@
 ## EJEMPLO 1: CONEXIÓN ENTRE RSTUDIO Y GITHUB
 
 
+
+
 ################################################################################
 ## EJEMPLO 2: CONEXIÓN A UNA BDD CON R
 
@@ -58,6 +60,7 @@ pop.3
 # Incluso podemos hacer usos de otros comandos de busqueda aplicando la 
 # libreria dplyr
 
+install.packages("dplyr")
 library(dplyr)
 pop50.mex <-  DataDB %>% filter(CountryCode == "MEX" ,  Population > 50000)   # Ciudades del paÃ­s de MÃ©xico con mÃ¡s de 50,000 habitantes
 
@@ -150,7 +153,7 @@ JsonData <- fromJSON(file= URL)     # Se guarda el JSon en un objeto de R
 
 class(JsonData)                     # Vemos que tipo de objeto es JsonData
 
-str(JsonData)                       # Vemos la naturaleza de sus variables
+str(JsonData)                       # Vemos la naturaleza de sus atributos
 
 # Finalmente ya que pudimos acceder al contenido del Json, tambien podemos 
 # realizar la manipulacionn de los datos dentro del Json, por ejemplo:
