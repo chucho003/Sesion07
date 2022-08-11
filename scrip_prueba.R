@@ -1,4 +1,5 @@
 #Codigo de R
 
 iris_db<- iris
-head iris 
+head(iris)
+summary(iris_db)
